@@ -23,7 +23,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    await client.connect();
+    // await client.connect();
     const usersCollection = client.db('edumanage').collection('users');
     const teacherRequestCollection = client.db('edumanage').collection('teacherRequests');
     const classesCollection = client.db('edumanage').collection('classes');
